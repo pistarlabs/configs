@@ -1,0 +1,2 @@
+# configs
+Go Config
