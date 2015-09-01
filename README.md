@@ -1,2 +1,2 @@
 # configs
-Go Config
+Package config provides convenient access methods to configuration stored as JSON.

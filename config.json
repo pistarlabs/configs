@@ -1,0 +1,20 @@
+{
+  "development":  {
+      "database": {
+          "host":"localhost",
+          "username":"root",
+          "password":"12345",
+          "port":12345,
+          "name":"dev"
+        }
+    },
+    "production": {
+      "database":{
+        "host":"localhost",
+        "username":"root",
+        "password":"12345",
+        "port":12345,
+        "name":"dev"
+      }
+    }
+}
