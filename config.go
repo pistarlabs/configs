@@ -13,6 +13,16 @@ type Config struct {
 	Root interface{}
 }
 
+// Get returns a nested config according to a dotted path.
+func (c *Config) Get(path string) (*Config, error) {
+	n, err := Get(c.Root, path)
+	if err != nil {
+		return nil, err
+	}
+
+	return &Config{Root: n}, nil
+}
+
 // String returns a string according to a dotted path.
 func (c *Config) String(path string) (string, error) {
 	n, err := Get(c.Root, path)
